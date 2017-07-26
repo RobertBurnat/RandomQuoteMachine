@@ -33,7 +33,7 @@ function createTweet(input) {
 	}
 }
 getQuote();
-$(.trigger).click(function() {
+$('.trigger').click(function() {
 	getQuote();
 	});
 });
