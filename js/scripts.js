@@ -19,7 +19,7 @@ function createTweet(input) {
 	var data = input[0];
 	var quoteText = $(data.content).text().trim();
 	var quoteAuthor = data.title;
-	var tweetText = 'Quote of the day - ' + quoteText + 'Author: ' + quoteAuthor;
+	var tweetText = 'Quote of the day - ' + quoteText + ' Author: ' + quoteAuthor;
 	if(!quoteAuthor.length) {
 		quoteAuthor = "Unknown author";
 	}
