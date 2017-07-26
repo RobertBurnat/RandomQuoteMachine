@@ -2,22 +2,34 @@ body {
 	margin: 50px auto;
 	padding: 20px;
 	text-align: center;
-}
-h1 {
-	text-align: center;
-	text-transform: uppercase;
-	color: #2f93b4;
-	position: relative;
-}
-#get-joke {
-	border: 2px dashed blue;
+	background-color: #1dcaff;
 	color: #fff;
-	background-color: #1cd781;
-	width: 100px;
-	height: 50px;
 }
-#joke {
-	margin: 20px 0;
+a {
+	color: #fff;
+	text-decoration: none;
+}
+.quote {
+	padding: 50px 0 5px;
+}
+.trigger {
+	border: 1px solid #fff;
+	background-color: #1dcaff;
+	width: 200px;
+	height: 30px;
+	margin-top: 60px;
+	color: #fff;
 	font-weight: bolder;
-	
+	text-transform: uppercase;
+}
+.tweet {
+	display: inline-block;
+	border: 1px solid #fff;
+	width: 200px;
+	height: 30px;
+	line-height: 30px;
+	margin: 30px 0;
+}
+.author {
+	text-decoration: underline;
 }
