@@ -10,7 +10,7 @@ function getQuote() {
 
 // $.ajax({
 // 	dataType: 'json',
-// 	url: quoteUrl,
+// 	url: prefix + quoteUrl,
 // 	data: null,
 // 	success: createTweet
 // });
@@ -19,16 +19,16 @@ function createTweet(input) {
 	var data = input[0];
 	var quoteText = $(data.content).text().trim();
 	var quoteAuthor = data.title;
+	var tweetText = 'Quote of the day - ' + quoteText + 'Author: ' + quoteAuthor;
 	if(!quoteAuthor.length) {
 		quoteAuthor = "Unknown author";
 	}
-	var tweetText = 'Quote of the day - ' + quoteText + 'Author: ' + quoteAuthor;
 	if(tweetText.length > 140) {
 	getQuote();
 	}else {
 		var tweet = tweetLink + encodeURIComponent(tweetText);
-		$('.quote').text(quoteText);
-		$('.author').text('Author:' + quoteAuthor);
+		$('.quote').text('“'+quoteText+'”');
+		$('.author').text('Author: ' + quoteAuthor);
 		$('.tweet').attr('href', tweet);
 	}
 }
